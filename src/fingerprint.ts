@@ -267,9 +267,9 @@ let baseEnhancedFingerprint = {
     "headless_browser_phantom": false,
     "headless_browser_selenium": false,
     "headless_browser_nightmare_js": false,
-    "document__referrer": "https://www.roblox.com/",
+    "document__referrer": "",
     "window__ancestor_origins": [
-        "https://www.roblox.com",
+        "https://auth0.openai.com",
     ],
     "window__tree_index": [
         0
