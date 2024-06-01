@@ -307,7 +307,7 @@ function getEnhancedFingerprint(fp: typeof baseFingerprint, ua: string, opts: an
         fingerprint.client_config__sitedata_location_href = opts.site;
     }
 
-    fingerprint.client_config__surl = opts.surl || "https://client-api.arkoselabs.com";
+    fingerprint.client_config__surl = opts.surl || "https://tcr9i.openai.com";
     fingerprint.audio_fingerprint = (124.04347527516074 + Math.random() * 0.001 - 0.0005).toString();
     
     return Object.entries(fingerprint).map(([k, v]) => ({ key: k, value: v }));
