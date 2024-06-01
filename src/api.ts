@@ -56,6 +56,11 @@ export async function getToken(
         options.headers["Origin"] = options.surl
         options.headers["Referer"] = `${options.surl}/v2/2.6.1/enforcement.bf6c920f19fb49ce16c82aaef4b83f45.html`
     }
+
+
+    let time = new Date().getTime() / 1000;
+    let bw =  Math.round(time - (time % 21600));
+    options.headers["x-ark-esync-value"] = ""+ bw;
     
     let ua = options.headers[Object.keys(options.headers).find(v => v.toLowerCase() == "user-agent")]
 
